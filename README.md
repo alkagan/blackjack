@@ -1,4 +1,3 @@
-7/24/18
 #Blackjack
 Hello all,
 We are making a simple blackjack game.
