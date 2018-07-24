@@ -1,5 +1,11 @@
 7/24/18
+#Blackjack
 Hello all,
-We are making a blackjack game because we got bored at work.
+We are making a simple blackjack game.
 
-Hello, Justin...
+##Team
+1. Alex Kagan - Product Owner
+2. Timothy Lo - Scrum Master 
+3. Justin Lau - Developer 
+
+
