@@ -24,6 +24,7 @@ public class Card{
         SPADES,
     }
 
+    // Is this declaration necessary?
     Value card_val;
     Suit card_suit;
     
@@ -34,14 +35,12 @@ public class Card{
     }
 
     public Value getValue(){
-        return card_val;
+        return this.card_val;
     }
 
     public Suit getSuit(){
-        return card_suit;
+        return this.card_suit;
     }
-
-
 
     public toString(){
         return ("Card value: " + this.card_val + "\nCard suit: " + this.card_suit);

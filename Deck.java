@@ -11,6 +11,7 @@ public class Deck{
         for(int i = 1; i <= 4; i++){
             for (int j = 1; j <= 13; j++){
                 DeckofCards.add(i*j);
+                // Card card = new Card(Value[i], Suit[i]);
             }
         }
     }
@@ -20,18 +21,16 @@ public class Deck{
         Collections.shuffle(DeckofCards);
     }
 
-    // Draw from the deck of cards
+    // Draw top-most card from deck 
     public void Draw(){
-        //return the top most card
         System.out.println(DeckofCards.get(0));
     }
 
-    // 
     public String toString(String card){ // [Card x]){
         return "You drew a x.value x.suite";
     }
 
-    public static void main(String [] args){
+    public static void main(String[] args){
         Deck hello = new Deck();
         hello.Shuffle();
         hello.Draw();
