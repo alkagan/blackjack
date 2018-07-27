@@ -1,7 +1,9 @@
+package blackjack;
+
 import java.util.*;
 
 public class Deck{
-    private ArrayList<Integer> DeckofCards;
+    private static ArrayList<Integer> DeckofCards;
 
     // Construct a deck of 52 cards
     Deck(){
@@ -15,19 +17,20 @@ public class Deck{
 
     // Shuffle the deck of cards
     public void Shuffle(){
-        System.out.println("Hello World");
+        Collections.shuffle(DeckofCards);
     }
 
     // Draw from the deck of cards
-    public static void Draw(){
+    public void Draw(){
         //return the top most card
-        System.out.println("Hello World");
+        System.out.println(DeckofCards.get(0));
     }
 
     // 
     public String toString(String card){ // [Card x]){
         return "You drew a x.value x.suite";
     }
+
     public static void main(String [] args){
         Deck hello = new Deck();
         hello.Shuffle();

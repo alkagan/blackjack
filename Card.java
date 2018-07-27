@@ -1,5 +1,7 @@
+package blackjack;
+
 public class Card{
-    private enum Value {
+    public enum Value {
         TWO,
         THREE,
         FOUR,
@@ -15,20 +17,33 @@ public class Card{
         ACE,
     }
 
-    private enum Suit {
+    public enum Suit {
         DIAMONDS,
         CLUBS,
         HEARTS,
         SPADES,
     }
 
-    int val, kind;
-    Value test1;
-    Suit test2;
-
+    Value card_val;
+    Suit card_suit;
+    
     // Constructor
-    public Card(Value test1, Suit test2){
-        this.test1 = test1;
-        this.test2 = test2;
+    public Card(Value card_val, Suit card_suit){
+        this.card_val = card_val;
+        this.card_suit = card_suit;
+    }
+
+    public Value getValue(){
+        return card_val;
+    }
+
+    public Suit getSuit(){
+        return card_suit;
+    }
+
+
+
+    public toString(){
+        return ("Card value: " + this.card_val + "\nCard suit: " + this.card_suit);
     }
 }
