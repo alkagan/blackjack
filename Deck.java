@@ -5,7 +5,7 @@ public class Deck{
 
     // Construct a deck of 52 cards
     Deck(){
-        DeckofCards = ArrayList<Integer>();
+        this.DeckofCards = new ArrayList<Integer>();
         for(int i = 1; i <= 4; i++){
             for (int j = 1; j <= 13; j++){
                 DeckofCards.add(i*j);
@@ -32,5 +32,6 @@ public class Deck{
         Deck hello = new Deck();
         hello.Shuffle();
         hello.Draw();
+        System.out.println(hello.DeckofCards);
     }
 }
